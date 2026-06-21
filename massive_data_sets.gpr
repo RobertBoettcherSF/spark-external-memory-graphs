@@ -1,0 +1,16 @@
+project Massive_Data_Sets is
+   for Source_Dirs use ("src");
+   for Object_Dir use "obj";
+   
+   -- No main procedure needed as this is a library project
+   for Main use ();
+
+   package Compiler is
+      for Default_Switches ("Ada") use ("-g", "-O2", "-gnata", "-gnatwa");
+   end Compiler;
+
+   package Prove is
+      -- SPARK verification settings
+      for Proof_Switches ("Ada") use ("--level=1", "--report=all");
+   end Prove;
+end Massive_Data_Sets;
