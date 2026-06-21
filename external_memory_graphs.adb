@@ -1,3 +1,6 @@
+-- Version: 0.01
+-- Initial version of External_Memory_Graphs implementation
+
 pragma SPARK_Mode (On);
 
 package body External_Memory_Graphs is
